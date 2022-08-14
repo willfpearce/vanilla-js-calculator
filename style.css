@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 38, 43);
+}
+
+.calc-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3fr;
+  width: stretch;
+  aspect-ratio: 0.7;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+
+}
+
+.calc-border {
+  width: 20%;
+  min-width: 400px;
+  padding: 20px;
+  background-color: slategray;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 440px) {
+  .calc-border {
+    width: 100vw;
+  }
+}
+
+.screen {
+  background-color: rgb(25, 24, 27);
+  color: rgb(255, 208, 0);
+  width: stretch;
+  margin: 12px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.buttons-container {
+  width: stretch;
+  margin: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size:2rem;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: inset;
+}
+
+.yellow {
+  background-color: rgb(205, 161, 94);
+}
+.yellow:active {
+  background-color: rgb(171, 134, 78);
+}
+
+.button:active {
+  transform: scale(95%);
+}
+
+.equal {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: rgb(255, 107, 54);
+}
+
+.equal:active {
+  background-color: rgb(213, 90, 45);
+}
+
+.brown {
+  background-color: rgb(53, 36, 36);
+}
+.brown:active {
+  background-color: rgb(42, 28, 28);
+}
+
+.screen > div { 
+  text-align: right;
+  width: stretch;
+  height: 25%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+hr {
+  width: 100%;
+  border: 1px solid transparent;
+  border-top: 1px solid rgb(255, 208, 0);
+  margin: 0px;
+}

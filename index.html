@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calc-border">
+      <div class="calc-container">
+        <div class="screen">
+          <div id="top-value"></div>
+          <div id="operator-value"></div>
+          <div id="bottom-value"></div>
+          <hr />
+          <div id="result-value"></div>
+        </div>
+        <div class="buttons-container">
+          <div class="button brown" id="clear" onclick="pressClear()">C</div>
+          <div class="button brown" id="negative" onclick="pressNegative()">
+            ( - )
+          </div>
+          <div class="button brown" id="slash" onclick="pressOperation('/')">
+            /
+          </div>
+          <div class="button brown" id="star" onclick="pressOperation('*')">
+            *
+          </div>
+          <div class="button yellow" id="seven" onclick="press(7)">7</div>
+          <div class="button yellow" id="eight" onclick="press(8)">8</div>
+          <div class="button yellow" id="nine" onclick="press(9)">9</div>
+          <div class="button brown" id="minus" onclick="pressOperation('-')">
+            -
+          </div>
+          <div class="button yellow" id="four" onclick="press(4)">4</div>
+          <div class="button yellow" id="five" onclick="press(5)">5</div>
+          <div class="button yellow" id="six" onclick="press(6)">6</div>
+          <div class="button brown" id="plus" onclick="pressOperation('+')">
+            +
+          </div>
+          <div class="button yellow" id="one" onclick="press(1)">1</div>
+          <div class="button yellow" id="two" onclick="press(2)">2</div>
+          <div class="button yellow" id="three" onclick="press(3)">3</div>
+          <div class="button equal" id="equals" onclick="pressEqual()">=</div>
+          <div class="button yellow" id="zero" onclick="press(0)">0</div>
+          <div class="button yellow" id="decimal" onclick="pressDecimal()">
+            .
+          </div>
+          <div class="button yellow" id="delete" onclick="pressDelete()">
+            DEL
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
